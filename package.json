@@ -1,6 +1,6 @@
 {
   "name": "chance-access-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple chance mixin which generates a random access token",
   "main": "index.js",
   "devDependencies": {
