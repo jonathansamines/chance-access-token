@@ -1,5 +1,8 @@
 # chance-access-token
 
+[![Travis](https://img.shields.io/travis/jonathansamines/chance-access-token.svg?style=flat-square)](https://travis-ci.org/jonathansamines/chance-access-token) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/chance-access-token)
+
+
 A simple chance mixin which generates a random access token
 
 ## Installation
