@@ -45,11 +45,19 @@ module.exports = function accessToken(options = {}) {
 
   if (opts.expireMode === expireModes.at) {
     const expirationDateValue = getExpirationDate(this, opts.expired);
-    const expirationDate = {
-      date: expirationDateValue,
-      iso: expirationDateValue.toISOString(),
-      unix: Math.round(expirationDateValue.getTime() / 1000),
-    }[opts.dateFormat];
+    let expirationDate;
+    switch (opts.dateFormat) {
+      case 'date':
+        expirationDate = expirationDateValue;
+        break;
+      case 'unix':
+        expirationDate = Math.round(expirationDateValue.getTime() / 1000);
+        break;
+      case 'iso':
+      default:
+        expirationDate = expirationDateValue.toISOString();
+        break;
+    }
 
     return Object.assign({}, baseAccessToken, {
       expires_at: expirationDate,
