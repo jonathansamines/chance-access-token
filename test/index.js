@@ -36,18 +36,27 @@ describe('when creating an access token', () => {
         expect(token).to.have.property('expires_at');
       });
 
-      it('generates a expired_at property as date when parseDate is true', () => {
-        const token = chance.accessToken({ expireMode: 'expires_at', parseDate: true });
+      it('generates a expired_at property as date when dateFormat is "date"', () => {
+        const token = chance.accessToken({ expireMode: 'expires_at', dateFormat: 'date' });
 
         expect(token).to.have.property('expires_at');
         expect(isDate(token.expires_at)).to.be.equal(true);
       });
 
-      it('generates a expired_at property as ISO string when parseDate is false', () => {
-        const token = chance.accessToken({ expireMode: 'expires_at', parseDate: false });
+      it('generates a expired_at property as ISO string when dateFormat is "iso"', () => {
+        const token = chance.accessToken({ expireMode: 'expires_at', dateFormat: 'iso' });
 
         expect(token).to.have.property('expires_at');
         expect(isDate(token.expires_at)).to.be.equal(false);
+        expect(typeof token.expires_at).to.be.equal('string');
+      });
+
+      it('generates a expired_at property as UNIX time when dateFormat is "unix"', () => {
+        const token = chance.accessToken({ expireMode: 'expires_at', dateFormat: 'unix' });
+
+        expect(token).to.have.property('expires_at');
+        expect(isDate(token.expires_at)).to.be.equal(false);
+        expect(typeof token.expires_at).to.be.equal('number');
       });
 
       it('generates a expired token when expired option is true', () => {
