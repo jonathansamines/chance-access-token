@@ -41,5 +41,5 @@ const expiredAccessToken = chance.accessToken({
 
 + `options`
   + `expireMode` -  Can be either **expires_at** or **expires_in**. When set to **expires_at** it generates a token which expires at a random date. When set to **expires_in** it generates a token which expires in a random number of seconds.
-  + `parseDate` - When is true and **expireMode** is **expires_at** it generates a date object, otherwise it generates a ISO string
+  + `dateFormat` - Used when **expireMode** is **expires_at** to determine the format of the **expires_at** field. Can be **date** to generate a date object, **unix** to generate a UNIX timestamp in seconds since epoch or **iso** to generate an ISO formatted string.
   + `expired` - When is true and **expireMode** is **expires_at** it generates a date in the past
