@@ -2,5 +2,9 @@
   "extends": "airbnb-base",
   "parserOptions": {
     "sourceType": "script"
+  },
+  "rules": {
+    "strict": "off",
+    "prefer-object-spread": "off"
   }
 }
