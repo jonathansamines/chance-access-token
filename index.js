@@ -17,7 +17,8 @@ const tokenDefaultOptions = {
  * @param {Boolean} expired Indicates if the generated date should be expired
  */
 const getExpirationDate = (chance, expired) => {
-  const millisecondsOffset = chance.second() * 1000;
+  const factor = 5;
+  const millisecondsOffset = chance.second() * factor * 1000;
 
   if (expired) {
     return new Date(Date.now() - millisecondsOffset);

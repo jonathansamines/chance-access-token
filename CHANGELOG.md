@@ -6,6 +6,7 @@
 
 ### Maintainance
 - Update nyc to v15
+- Use ava test runner instead of mocha + chai
 - Change publishing settings to use package files and explicitly set the global registry
 
 ## 1.0.0
