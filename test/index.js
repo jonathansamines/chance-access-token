@@ -3,7 +3,7 @@
 const test = require('ava');
 const { isFuture, isPast, isDate } = require('date-fns');
 const Chance = require('chance');
-const accessToken = require('./../');
+const accessToken = require('..');
 
 const hasOwnProperty = (ctx, ...args) => Object.prototype.hasOwnProperty.call(ctx, ...args);
 
