@@ -2,11 +2,11 @@
 
 ## 2.1.0
 ### Maintainance
-- Use github actions instead of travis
-- Add node 12 and node 14 to the test matrix
-- Update to eslint v7
-- Use volta instead of nvm to pin node development version
-- Update development dependencies
+- [#11](https://github.com/jonathansamines/chance-access-token/pull/11) Use github actions instead of travis
+- [#11](https://github.com/jonathansamines/chance-access-token/pull/11) Add node 12 and node 14 to the test matrix
+- [#11](https://github.com/jonathansamines/chance-access-token/pull/11) Update to eslint v7
+- [#11](https://github.com/jonathansamines/chance-access-token/pull/11) Use volta instead of nvm to pin node development version
+- [#11](https://github.com/jonathansamines/chance-access-token/pull/11) Update development dependencies
 
 ## 2.0.0
 ### Breaking Changes
