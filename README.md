@@ -3,7 +3,6 @@
 [![npm](https://img.shields.io/npm/v/chance-access-token.svg?style=flat-square)](https://www.npmjs.com/package/chance-access-token)
 [![Build Status](https://github.com/jonathansamines/chance-access-token/workflows/Node.js%20CI/badge.svg)](https://github.com/jonathansamines/chance-access-token/actions)
 
-
 A simple chance mixin which generates a random access token
 
 ## Installation

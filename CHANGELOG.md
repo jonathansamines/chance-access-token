@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0
+### Maintainance
+- Use github actions instead of travis
+- Add node 12 and node 14 to the test matrix
+- Update to eslint v7
+- Use volta instead of nvm to pin node development version
+- Update development dependencies
+
 ## 2.0.0
 ### Breaking Changes
 - Remove support for unmantained Node.js versions (v6 and v8) [#4](https://github.com/jonathansamines/chance-access-token/pull/4)
